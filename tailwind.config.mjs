@@ -9,8 +9,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        serif: ["Lora", ...defaultTheme.fontFamily.serif],
+        sans: ["Plus Jakarta Sans", ...defaultTheme.fontFamily.sans],
+        serif: ["Inter", ...defaultTheme.fontFamily.serif],
+        //lmao workaround
       },
     },
   },
