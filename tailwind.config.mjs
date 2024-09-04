@@ -11,7 +11,7 @@ export default {
       fontFamily: {
         sans: ["Plus Jakarta Sans", ...defaultTheme.fontFamily.sans],
         serif: ["Inter", ...defaultTheme.fontFamily.serif],
-        //lmao workaround
+        //TODO swap with Untitled Sans
       },
     },
   },
