@@ -2,6 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .font-bold {
+    @apply tracking-tighter;
+  }
+
+  h1 {
+    @apply text-4xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl font-bold;
+  }
+
+  h4 {
+    @apply text-xl font-bold;
+  }
+
+  h5 {
+    @apply text-lg font-bold;
+  }
+
+  h6 {
+    @apply text-base font-bold;
+  }
+}
+
+/* Untitled Sans Web Regular */
+@font-face {
+  font-family: 'Untitled Sans Web';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://68wh74faiouuqgxn.public.blob.vercel-storage.com/fonts/untitled-sans-web-regular-dEttssOf6uaPX1TKsicYVOHghz60qF.eot');
+  src: local('Untitled Sans Web Regular'), local('UntitledSansWeb-Regular'),
+    url('https://68wh74faiouuqgxn.public.blob.vercel-storage.com/fonts/untitled-sans-web-regular-YmKdf90Bh2qRNrVu64SG3l4E4sS1Yg.woff2') format('woff2'),
+    url('https://68wh74faiouuqgxn.public.blob.vercel-storage.com/fonts/untitled-sans-web-regular-ilRM8bLJqfi5R3dufI6q1HCXAkga7A.woff') format('woff'),
+    url('https://68wh74faiouuqgxn.public.blob.vercel-storage.com/fonts/untitled-sans-web-regular-dEttssOf6uaPX1TKsicYVOHghz60qF.eot?#iefix') format('embedded-opentype');
+  font-display: swap;
+}
+
+/* Untitled Sans Web Bold */
+@font-face {
+  font-family: 'Untitled Sans Web';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://68wh74faiouuqgxn.public.blob.vercel-storage.com/fonts/untitled-sans-web-bold-LEeTLc9uZnj5Tn1Z8jFKEKJw8DP6ls.eot?');
+  src: local('Untitled Sans Web Bold'), local('UntitledSansWeb-Bold'),
+    url('https://68wh74faiouuqgxn.public.blob.vercel-storage.com/fonts/untitled-sans-web-bold-4UhK0cT3AE2CtEwQRlDMVOabiiJAMv.woff2') format('woff2'),
+    url('https://68wh74faiouuqgxn.public.blob.vercel-storage.com/fonts/untitled-sans-web-bold-2DffGLJtU4gFpx5SecdCVJ6ftjvij5.woff') format('woff'),
+    url('https://68wh74faiouuqgxn.public.blob.vercel-storage.com/fonts/untitled-sans-web-bold-LEeTLc9uZnj5Tn1Z8jFKEKJw8DP6ls.eot?#iefix') format('embedded-opentype');
+  font-display: swap;
+}
+
 html {
   overflow-y: scroll;
   color-scheme: light;
@@ -10,6 +66,8 @@ html {
 html.dark {
   color-scheme: dark;
 }
+
+
 
 html,
 body {
@@ -39,7 +97,7 @@ footer {
 
 article {
   @apply max-w-full prose dark:prose-invert prose-img:mx-auto prose-img:my-auto;
-  @apply prose-headings:font-semibold prose-p:font-serif;
+  @apply prose-headings:font-semibold prose-p:font-sans;
   @apply prose-headings:text-black prose-headings:dark:text-white;
 }
 
@@ -49,6 +107,7 @@ article {
     @apply decoration-black/15 dark:decoration-white/30;
     @apply transition-colors duration-300 ease-in-out;
   }
+
   article a:hover {
     @apply text-black dark:text-white;
     @apply decoration-black/25 dark:decoration-white/50;

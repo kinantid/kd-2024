@@ -9,9 +9,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Plus Jakarta Sans", ...defaultTheme.fontFamily.sans],
-        serif: ["Inter", ...defaultTheme.fontFamily.serif],
-        //TODO swap with Untitled Sans
+        sans: ["Untitled Sans Web", ...defaultTheme.fontFamily.sans],
+      },
+      fontWeight: {
+        normal: 400,
+        bold: 700,
+      },
+      letterSpacing: {
+        tighter: '-0.04em',
       },
     },
   },
