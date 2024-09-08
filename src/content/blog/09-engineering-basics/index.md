@@ -1,5 +1,5 @@
 ---
-title: "Engineering basics"
+title: "Troubleshooting code 101"
 description: "Reminders for myself, a designer learning software engineering"
 date: "08/30/24"
 draft: false
